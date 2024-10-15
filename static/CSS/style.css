@@ -1,4 +1,37 @@
 body {
-    text-align: center;
+    background-color: #ccffcc;
+    font-family: Arial, sans-serif;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 144px;
+    margin-bottom: 48px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container ol {
+    text-align: left;
+    font-size: 16px;
+    margin-left: 439px;
+    margin-right: 453px;
+    /*line-height: 1.6;*/
+}
+
+.user {
+    align-items: end;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    ol {
+        font-size: 16px;
+    }
 }
