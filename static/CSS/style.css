@@ -25,16 +25,18 @@ body {
     font-weight: bold;
     display: flex;
     flex-flow: column;
+    margin-bottom: 18px;
 }
 
 .messageInsert p {
     margin-bottom: 3px;
-    text-align: start;
+    display: flex;
+    align-items: start;
 }
 
 .container h1 {
     text-align: center;
-    margin-top: 144px;
+    margin-top: 100px;
     margin-bottom: 48px;
     font-size: 50px;
     font-weight: bold;

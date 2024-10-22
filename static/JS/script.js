@@ -28,17 +28,17 @@ function handleClick(event) {
     } else {
         if (numeroInserito > numEFFETIVO) {
             console.log("Il numero '" + numeroInserito + "' è troppo grande")
-            elem2.innerHTML = `Il numero ${numeroInserito} è troppo grande`
+            elem2.innerHTML = `Il numero <strong>${numeroInserito}</strong> è troppo grande`
             tentativi -= 1
             contatore += 1
         } else if (numeroInserito < numEFFETIVO) {
             console.log("Il numero '" + numeroInserito + "' è troppo piccolo")
-            elem2.innerHTML = `Il numero ${numeroInserito} è troppo piccolo`
+            elem2.innerHTML = `Il numero <strong>${numeroInserito}</strong> è troppo piccolo`
             tentativi -= 1
             contatore += 1
         } else if (numeroInserito === numEFFETIVO) {
             console.log("Bravo, hai vinto!")
-            elem3.innerHTML = `Bravo, hai vinto! Il numero era ${numEFFETIVO}`
+            elem3.innerHTML = `Bravo, hai vinto! Il numero era <strong>${numEFFETIVO}</strong>`
             indovinato = true
             document.querySelector("#guess").disabled = true;
             document.querySelector("#guessBtn").disabled = true;
@@ -46,11 +46,11 @@ function handleClick(event) {
     }
     if (tentativi === 0 && !indovinato) {
         console.log("Hai esaurito i tentativi, hai perso!")
-        elem3.innerHTML = `Mi dispiace, hai perso! Il numero era ${numEFFETIVO}`
+        elem3.innerHTML = `Mi dispiace, hai perso! Il numero era <strong>${numEFFETIVO}</strong>`
         document.querySelector("#guess").disabled = true;
         document.querySelector("#guessBtn").disabled = true;
     }
-    elem.innerHTML = "Hai ancora " + tentativi + " tentativi";
+    elem.innerHTML = `Hai ancora <strong> ${tentativi} </strong> tentativi`
 }
 
 
@@ -64,4 +64,4 @@ let userField = document.querySelector("#guess")
 let btn = document.querySelector("#guessBtn")
 btn.addEventListener("click", handleClick)
 let elem = document.querySelector("#tentativi")
-elem.innerHTML = "Hai ancora " + tentativi + " tentativi"
+elem.innerHTML = `Hai ancora <strong> ${tentativi} </strong> tentativi`
