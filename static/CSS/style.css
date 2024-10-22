@@ -4,6 +4,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
+}
+
+#guess {
+    width: 346px;
+    height: 58px;
+    border-radius: 5px;
+    border: 0px;
+    margin-bottom: 14px;
+}
+
+#guessBtn {
+    background-color: #3AE3A8;
+    width: 350px;
+    height: 60px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+}
+
+.messageInsert p {
+    margin-bottom: 3px;
+    text-align: start;
 }
 
 .container h1 {
@@ -14,12 +40,11 @@ body {
     font-weight: bold;
 }
 
-.rules ol ul li {
+.rules {
     text-align: left;
     font-size: 16px;
     margin-left: 439px;
     margin-right: 453px;
-    line-height: 1.6;
 }
 
 .user {
