@@ -1,10 +1,25 @@
-body {
-    background-color: #ccffcc;
+#body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+}
+
+.greenBg {
+    background-color: #ccffc5;
+}
+
+.yellowBg {
+    background-color: yellow;
+}
+
+.redBg {
+    background-color: red;
+}
+
+.transition {
+    transition: ease-in 0.2s;
 }
 
 #guess {
@@ -26,6 +41,19 @@ body {
     display: flex;
     flex-flow: column;
     margin-bottom: 18px;
+    transition: ease 0.1s;
+}
+
+.greenBtnBg {
+    background-color: #3AE3A8;
+}
+
+.yellowBtnBg {
+    background-color: yellow;
+}
+
+.redBtnBg {
+    background-color: white;
 }
 
 .messageInsert p {
@@ -45,8 +73,6 @@ body {
 .rules {
     text-align: left;
     font-size: 16px;
-    margin-left: 439px;
-    margin-right: 453px;
 }
 
 .user {
